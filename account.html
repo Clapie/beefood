@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/popup.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Account | Beefood</title>
 </head>
@@ -13,8 +14,29 @@
 			<ul>
 				<li><a href="home.html">Home</a></li>
 				<li><a href="menu.html">Menu</a></li>
-				<li><a href="cart.html">Cart</a></li>
-				<li><a href="account.html">My Account</a></li>
+				<li id="myBtn"><a>Cart</a></li>	
+					<!-- Modal -->
+					<div id="myModal" class="modal">		
+						<div class="modal-content">
+							<div class="modal-header">
+								<span class="close">&times;</span>
+								<h2>Your Cart</h2>
+							</div>
+							<div class="modal-body">
+								<p>Your cart is empty...</p>
+							</div>
+							<div class="modal-footer">
+								<button>Place Order</button>
+							</div>
+						</div>
+					</div>		
+				<li class="dropdown">
+					<a href="account.html" class="activeNav">My Account &#9660;</a>
+					<ul>
+						<li><a>Log In</a></li>
+						<li><a href="register.html">Create Account</a></li>
+					</ul>
+				</li>
 			</ul>
         </div>
         <div class="content">
@@ -25,4 +47,5 @@
 		</div>
 	</div>
 </body>
+<script src="jscript/popup.js"></script>
 </html>
