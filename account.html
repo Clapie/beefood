@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/popup.css">
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/account.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Account | Beefood</title>
 </head>
 <body>
     <div id="html">
-			<div class="header">
-				<ul>
-					<li><a href="home.html" class="activeNav">Home</a></li>
-					<li class="dropdown">
+		<div class="header">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li class="dropdown">
 						<a href="menu.html">Menu &#9660;</a>
 						<ul>
 							<li><a href="food.html">Foods</a></li>
@@ -21,33 +23,69 @@
 							<li><a href="dessert.html">Dessert</a></li>
 						</ul>
 					</li>
-					<li id="myBtn"><a>Cart</a></li>	
-						<!-- Modal -->
-						<div id="myModal" class="modal">		
-							<div class="modal-content">
-								<div class="modal-header">
-									<span class="close">&times;</span>
-									<h2>Your Cart</h2>
-								</div>
-								<div class="modal-body">
-									<p>Your cart is empty...</p>
-								</div>
-								<div class="modal-footer">
-									<button>Place Order</button>
-								</div>
+				<li id="myBtn"><a>Cart</a></li>	
+					<!-- Modal -->
+					<div id="myModal" class="modal">		
+						<div class="modal-content">
+							<div class="modal-header">
+								<span class="close">&times;</span>
+								<h2>Your Cart</h2>
+							</div>
+							<div class="modal-body">
+								<p>Your cart is empty...</p>
+							</div>
+							<div class="modal-footer">
+								<button>Place Order</button>
 							</div>
 						</div>
-					<li class="dropdown">
-						<a href="account.html" class="activeNav">My Account &#9660;</a>
-						<ul>
-							<li><a>Log In</a></li>
-							<li><a href="register.html">Create Account</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
+					</div>		
+				<li class="dropdown">
+					<a href="account.html" class="activeNav">My Account &#9660;</a>
+					<ul>
+						<li><a onclick="document.getElementById('login').style.display='block'">Log In</a></li>
+							<div id="login" class="lModal">  
+								<form class="lModal-content animate" action="/action_page.php">
+									<div class="xContainer">
+										<span onclick="document.getElementById('login').style.display='none'" class="btnClose" title="Close Modal">&times;</span>
+									</div>
+									<div class="container">
+										<label for="uname"><b>Username</b></label>
+										<input type="text" placeholder="Username" name="uname" required>							  
+										<label for="psw"><b>Password</b></label>
+										<input type="password" placeholder="Password" name="psw" required>
+										<button type="submit">Login</button>
+										<label><input type="checkbox" checked="checked">Remember me</label>
+									</div>
+									<!-- <div class="fContainer">
+											<a href="#" class="fPass">Forgot password?</a>
+									</div> -->
+								</form>
+							</div>
+						<li><a href="register.html">Create Account</a></li>
+					</ul>
+				</li>
+			</ul>
+        </div>
         <div class="content">
-
+			<div id="title">
+				<h1>Account</h1>
+				<hr>
+			</div>
+			
+			<div class="content-body">
+				<h3><b>Name</b></h3>
+				<p>Donald</p><div style="height:1px;font-size:1px;">&nbsp;</div>
+				<h3><b>Email</b></h3>
+				<p>donald@gmail.com</p><div style="height:1px;font-size:1px;">&nbsp;</div>
+				<h3><b>Phone Number</b></h3>
+				<p>081212121</p><div style="height:1px;font-size:1px;">&nbsp;</div>
+				<h3><b>Address</b></h3>
+				<p>White House</p><div style="height:1px;font-size:1px;">&nbsp;</div>
+				<h3><b>Address Details</b></h3>
+				<p id="large">The big building</p><div style="height:1px;font-size:1px;">&nbsp;</div>
+				<button id="edit">Edit Account Details</button>
+			</div>
+			
         </div>
 		<div class="footer">
 			<h6>Copyright &copy; 2019 Beefood Indonesia</h6>
