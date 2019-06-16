@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/home-style.css">
 	<link rel="stylesheet" href="css/popup.css">
+	<link rel="stylesheet" href="css/login.css">
 	<link rel="stylesheet" href="css/menu-style.css">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Beverage Menu | Beefood</title>
@@ -14,9 +15,9 @@
 	<div id="html">
 		<div class="header">
 			<ul>
-				<li><a href="home.html" class="activeNav">Home</a></li>
+				<li><a href="home.html">Home</a></li>
 				<li class="dropdown">
-					<a href="menu.html">Menu &#9660;</a>
+					<a class="activeNav" href="menu.html">Menu &#9660;</a>
 					<ul>
 						<li><a href="food.html">Foods</a></li>
 						<li><a href="beverage.html">Beverages</a></li>
@@ -40,9 +41,27 @@
 						</div>
 					</div>
 				<li class="dropdown">
-					<a href="account.html" class="activeNav">My Account &#9660;</a>
+					<a href="account.html">My Account &#9660;</a>
 					<ul>
-						<li><a>Log In</a></li>
+						<li><a onclick="document.getElementById('login').style.display='block'">Log In</a></li>
+							<div id="login" class="lModal">  
+								<form class="lModal-content animate" action="/action_page.php">
+									<div class="xContainer">
+										<span onclick="document.getElementById('login').style.display='none'" class="btnClose" title="Close Modal">&times;</span>
+									</div>
+									<div class="container">
+										<label for="uname"><b>Username</b></label>
+										<input class="inpUsr" type="text" placeholder="Username" name="uname" required>							  
+										<label for="psw"><b>Password</b></label>
+										<input class="inpPas" type="password" placeholder="Password" name="psw" required>
+										<button type="submit">Login</button>
+										<label><input type="checkbox" checked="checked">Remember me</label>
+									</div>
+									<!-- <div class="fContainer">
+											<a href="#" class="fPass">Forgot password?</a>
+									</div> -->
+								</form>
+							</div>
 						<li><a href="register.html">Create Account</a></li>
 					</ul>
 				</li>

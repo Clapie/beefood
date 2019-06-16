@@ -1,0 +1,34 @@
+.inp, #txtNote {
+    width: 40%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+.inp:focus {
+    background-color: #ddd;
+    outline: none;
+}
+  
+hr {
+    margin-bottom: 25px;
+}
+
+.content h1{
+    padding-left: 5px;
+}
+ 
+.content-body {
+    padding-left: 1%;
+
+}
+
+#signup {
+    width: auto;
+}
+
+#txtNote {
+    line-height: 50px;
+}
