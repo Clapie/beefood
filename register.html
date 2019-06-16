@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/popup.css">
 	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/register.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Register | Beefood</title>
 </head>
@@ -49,9 +50,9 @@
 									</div>
 									<div class="container">
 										<label for="uname"><b>Username</b></label>
-										<input type="text" placeholder="Username" name="uname" required>							  
+										<input class="inpUsr" type="text" placeholder="Username" name="uname" required>							  
 										<label for="psw"><b>Password</b></label>
-										<input type="password" placeholder="Password" name="psw" required>
+										<input class="inpPas" type="password" placeholder="Password" name="psw" required>
 										<button type="submit">Login</button>
 										<label><input type="checkbox" checked="checked">Remember me</label>
 									</div>
@@ -66,7 +67,50 @@
 			</ul>
 		</div>
 		<div class="content">
+			<h1>Create an account</h1>
+				<hr>
+				
+				<div class="content-body">
+					<label for="email"><b>Email</b></label>
+					<div style="height:1px;font-size:1px;">&nbsp;</div>
+					<input class="inp" type="text" placeholder="Email" name="email" required>
+					<div style="height:1px;font-size:1px;">&nbsp;</div>
 
+					<label for="psw"><b>Password</b></label>
+					<div style="height:1px;font-size:1px;">&nbsp;</div>
+					<input class="inp" type="password" placeholder="Password" name="psw" required>
+					<div style="height:1px;font-size:1px;">&nbsp;</div>
+
+					<label for="psw-repeat"><b>Repeat Password</b></label>
+					<div style="height:1px;font-size:1px;">&nbsp;</div>
+					<input class="inp" type="password" placeholder="Repeat Password" name="psw-repeat" required>
+					<div style="height:1px;font-size:1px;">&nbsp;</div>
+
+					<label for="name"><b>Name</b></label>
+					<div style="height:1px;font-size:1px;">&nbsp;</div>
+					<input class="inp" type="text" placeholder="Name" name="name" required>
+					<div style="height:1px;font-size:1px;">&nbsp;</div>
+
+					<label for="phone"><b>Phonenumber</b></label>
+					<div style="height:1px;font-size:1px;">&nbsp;</div>
+					<input class="inp" type="text" placeholder="081-xxx-xxxx" name="phone" required>
+					<div style="height:1px;font-size:1px;">&nbsp;</div>
+
+					<label for="address"><b>Address</b></label>
+					<div style="height:1px;font-size:1px;">&nbsp;</div>
+					<input class="inp" type="text" placeholder="Jl. Street, West Jakarta" name="address" required>
+					<div style="height:1px;font-size:1px;">&nbsp;</div>
+					
+					<label for="notes"><b>Address Details</b></label>
+					<div style="height:1px;font-size:1px;">&nbsp;</div>
+					<!-- <input id="txtNote" class="inp" type="text" placeholder="Additional address notes for the driver" name="notes"> -->
+					<textarea id="txtNote" name="notes" id="" cols="30" rows="5" placeholder="Additional address notes for the driver"></textarea>
+					<div style="height:1px;font-size:1px;">&nbsp;</div>
+					
+					<br>
+					<button id="signup">Create Account</button>
+					<div style="height:20px;font-size:1px;">&nbsp;</div>
+				</div>
 		</div>
 		<div class="footer">
 			<h6>Copyright &copy; 2019 Beefood Indonesia</h6>
