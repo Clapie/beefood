@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/home-style.css">
+	<link rel="stylesheet" href="css/popup.css">
+	<link rel="stylesheet" href="css/menu-style.css">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Beefood</title>
+</head>
+<body>
+	<div id="html">
+		<div class="header">
+			<ul>
+				<li><a href="home.html" class="activeNav">Home</a></li>
+				<li class="dropdown">
+					<a href="menu.html">Menu &#9660;</a>
+					<ul>
+						<li><a href="food.html">Foods</a></li>
+						<li><a href="beverage.html">Beverages</a></li>
+						<li><a href="dessert.html">Dessert</a></li>
+					</ul>
+				</li>
+				<li id="myBtn"><a>Cart</a></li>	
+					<!-- Modal -->
+					<div id="myModal" class="modal">		
+						<div class="modal-content">
+							<div class="modal-header">
+								<span class="close">&times;</span>
+								<h2>Your Cart</h2>
+							</div>
+							<div class="modal-body">
+								<p>Your cart is empty...</p>
+							</div>
+							<div class="modal-footer">
+								<button>Place Order</button>
+							</div>
+						</div>
+					</div>
+				<li class="dropdown">
+					<a href="account.html" class="activeNav">My Account &#9660;</a>
+					<ul>
+						<li><a>Log In</a></li>
+						<li><a href="register.html">Create Account</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<div id="contentMenu">
+			<div id="conmenutxt">
+				<h1>Food</h1>
+				<h2>Feel the sensation of burgers and fried chicken that you will definitely like. Available in a la carte and package</h2>
+			</div>
+			<div id="conmenuimg">
+				<img src="images/food.jpg">
+			</div>
+		</div>
+
+		<div id="content2Menu">
+			<div class="cardMenu">
+				<div class="cardMenuimg">
+					<img src="images/foodmenu1.jpg">
+				</div>
+				
+				<div class="cardMenutxt">
+					<h2>Cheeseburger</h2>
+				</div>
+
+				<div class="input_div">
+					<input type="text" size="10" value="0" id="food">
+					<input type="button" value="-" onclick="minus('food')">
+					<input type="button" value="+" onclick="plus('food')">
+				</div>
+			</div>
+
+			<div class="cardMenu">
+				<div class="cardMenuimg">
+					<img src="images/foodmenu2.jpg">
+				</div>
+				
+				<div class="cardMenutxt">
+					<h2>Doubleburger</h2>
+				</div>
+
+				<div class="input_div">
+					<input type="text" size="10" value="0" id="food1">
+					<input type="button" value="-" onclick="minus('food1')">
+					<input type="button" value="+" onclick="plus('food1')">
+				</div>
+			</div>
+
+			<div class="cardMenu">
+				<div class="cardMenuimg">
+					<img src="images/foodmenu3.jpg">
+				</div>
+				
+				<div class="cardMenutxt">
+					<h2>Double Cheeseburger</h2>
+				</div>
+
+				<div class="input_div">
+					<input type="text" size="10" value="0" id="food2">
+					<input type="button" value="-" onclick="minus('food2')">
+					<input type="button" value="+" onclick="plus('food2')">
+				</div>
+			</div>
+
+			<div class="cardMenu">
+				<div class="cardMenuimg">
+					<img src="images/foodmenu4.jpg">
+				</div>
+				
+				<div class="cardMenutxt">
+					<h2>Fish Fillet Burger</h2>
+				</div>
+
+				<div class="input_div">
+					<input type="text" size="10" value="0" id="food3">
+					<input type="button" value="-" onclick="minus('food3')">
+					<input type="button" value="+" onclick="plus('food3')">
+				</div>
+			</div>
+
+			<div class="cardMenu">
+				<div class="cardMenuimg">
+					<img src="images/foodmenu5.jpg">
+				</div>
+				
+				<div class="cardMenutxt">
+					<h2>2 chicken with fries</h2>
+				</div>
+
+				<div class="input_div">
+					<input type="text" size="10" value="0" id="food4">
+					<input type="button" value="-" onclick="minus('food4')">
+					<input type="button" value="+" onclick="plus('food4')">
+				</div>
+			</div>
+
+			<div class="cardMenu">
+				<div class="cardMenuimg">
+					<img src="images/foodmenu6.jpg">
+				</div>
+				
+				<div class="cardMenutxt">
+					<h2>Fish n Chips</h2>
+				</div>
+
+				<div class="input_div">
+					<input type="text" size="10" value="0" id="food6">
+					<input type="button" value="-" onclick="minus('food6')">
+					<input type="button" value="+" onclick="plus('food6')">
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<h6>Copyright &copy; 2019 Beefood Indonesia</h6>
+		</div>
+	</div>
+</body>
+<script src="jscript/home.js"></script>
+<script src="jscript/popup.js"></script>
+<script src="jscript/input_div.js"></script>
+</html>

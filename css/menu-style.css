@@ -1,11 +1,11 @@
-#html .contentMenu {
+#html #contentMenu {
     background-color: #f1f1f1;
     display: block;
     height: 400px;
     width: 100%;
 }
 
-#html .contentMenu #conmenutxt {
+#html #contentMenu #conmenutxt {
     display: inline-block;
     width: 55%;
     height: 100%;
@@ -15,63 +15,96 @@
     padding-top: 40px;
 }
 
-#html .contentMenu #conmenutxt h1 {
+#html #contentMenu #conmenutxt h1 {
     font-size: 70px;
     margin-bottom: 0;
     font-weight: 100;
 }
 
-#html .contentMenu #conmenutxt h2 {
+#html #contentMenu #conmenutxt h2 {
     font-size: 30px;
     margin-top: 0;
     font-weight: 100;
 }
 
-#html .contentMenu #conmenuimg {
+#html #contentMenu #conmenuimg {
     display: inline-block;
     width: 40%;
     height: 100%;
 }
 
-#html .contentMenu #conmenuimg img {
+#html #contentMenu #conmenuimg img {
     height: 100%;
 }
 
-#html .content1Menu {
+#html #content1Menu {
     display: block;
     margin: auto 0;
+    margin-bottom: 100px;
 }
 
-#html .content1Menu .cardMenu{
+#html #content1Menu .cardMenu{
     display: inline-block;
     width: 40%;
     margin: 30px 40px;
     padding-left: 30px;
 }
 
-#html .content1Menu .cardMenu .cardMenuimg {
+#html #content1Menu .cardMenu .cardMenuimg {
     height: 40%;
     width: 50%;
     margin: 0 auto;
 }
 
-#html .content1Menu .cardMenu .cardMenuimg img{
+#html #content1Menu .cardMenu .cardMenuimg img{
     height: 100%;
     margin: auto 0;
     padding-left: 70px;
 }
 
-#html .content1Menu .cardMenu .cardMenutxt{
+#html #content1Menu .cardMenu .cardMenutxt {
     text-decoration: none;
     color: black;
     text-align: center;
 }
 
-#html .content1Menu .cardMenu .cardMenutxt h2{
+#html #content1Menu .cardMenu .cardMenutxt h2 {
     font-size: 40px;
 }
 
-#html .content1Menu .cardMenu .cardMenutxt h4{
+#html #content1Menu .cardMenu .cardMenutxt h4 {
     font-size: 20px;
     font-weight: 100;
+}
+
+#html #content2Menu {
+    width: 100%;
+    margin: 0 11%;
+    display: block;
+    margin-bottom: 100px;
+}
+
+#html #content2Menu .cardMenu {
+    width: 20%;
+    display: inline-block;
+    margin-bottom: 5%;
+}
+
+#html #content2Menu .cardMenu .cardMenuimg {
+    height: 40%;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#html #content2Menu .cardMenu .cardMenuimg img {
+    height: 100%;
+    width: 100%;
+}
+
+#html #content2Menu .cardMenu .cardMenutxt {
+    text-align: center;
+}
+
+#html #content2Menu .cardMenu .input_div {
+    margin-left: 75px;
 }
