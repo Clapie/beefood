@@ -1,0 +1,28 @@
+.content h1{
+    padding-left: 5px;
+}
+
+.content-body {
+    padding-left: 2%;
+}
+
+.content-body h3{
+    padding-left: 0;
+}
+
+.content-body p {
+    padding-left: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-style: groove;
+    border-radius: 5px;
+    width: 20%;
+}
+
+#large {
+    padding-bottom: 50px;
+}
+
+#edit {
+    width: auto;
+}
