@@ -21,7 +21,7 @@
 // })
 
 $('.navbar-nav li a').click(function(e){
-    e.preventDefault();
-    $('.navbar-nav li a').removeClass('active').addClass('inactive');
-    $(this).addClass('active');
-  })
+  e.preventDefault();
+  $('.navbar-nav li a').removeClass('active').addClass('inactive');
+  $(this).addClass('active');
+})

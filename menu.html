@@ -5,49 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/popup.css">
-	<link rel="stylesheet" href="css/menu-style.css">
+	<link rel="stylesheet" href="css/login.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Menu | Beefood</title>
 </head>
 <body>
 	<div id="html">
 		<div class="header">
-				<ul>
-					<li><a href="home.html" class="activeNav">Home</a></li>
-					<li class="dropdown">
-						<a href="menu.html">Menu &#9660;</a>
-						<ul>
-							<li><a href="food.html">Foods</a></li>
-							<li><a href="beverage.html">Beverages</a></li>
-							<li><a href="dessert.html">Dessert</a></li>
-						</ul>
-					</li>
-					<li id="myBtn"><a>Cart</a></li>	
-						<!-- Modal -->
-						<div id="myModal" class="modal">		
-							<div class="modal-content">
-								<div class="modal-header">
-									<span class="close">&times;</span>
-									<h2>Your Cart</h2>
-								</div>
-								<div class="modal-body">
-									<p>Your cart is empty...</p>
-								</div>
-								<div class="modal-footer">
-									<button>Place Order</button>
-								</div>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li class="dropdown">
+					<a href="menu.html">Menu &#9660;</a>
+					<ul>
+						<li><a href="food.html">Foods</a></li>
+						<li><a href="beverage.html">Beverages</a></li>
+						<li><a href="dessert.html">Dessert</a></li>
+					</ul>
+				</li>
+				<li id="myBtn"><a>Cart</a></li>	
+					<!-- Modal -->
+					<div id="myModal" class="modal">		
+						<div class="modal-content">
+							<div class="modal-header">
+								<span class="close">&times;</span>
+								<h2>Your Cart</h2>
+							</div>
+							<div class="modal-body">
+								<p>Your cart is empty...</p>
+							</div>
+							<div class="modal-footer">
+								<button>Place Order</button>
 							</div>
 						</div>
-					<li class="dropdown">
-						<a href="account.html" class="activeNav">My Account &#9660;</a>
-						<ul>
-							<li><a>Log In</a></li>
-							<li><a href="register.html">Create Account</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-        <div id="contentMenu">
+					</div>		
+				<li class="dropdown">
+					<a href="account.html">My Account &#9660;</a>
+					<ul>
+						<li><a onclick="document.getElementById('login').style.display='block'">Log In</a></li>
+							<div id="login" class="lModal">  
+								<form class="lModal-content animate" action="/action_page.php">
+									<div class="xContainer">
+										<span onclick="document.getElementById('login').style.display='none'" class="btnClose" title="Close Modal">&times;</span>
+									</div>
+									<div class="container">
+										<label for="uname"><b>Username</b></label>
+										<input type="text" placeholder="Username" name="uname" required>							  
+										<label for="psw"><b>Password</b></label>
+										<input type="password" placeholder="Password" name="psw" required>
+										<button type="submit">Login</button>
+										<label><input type="checkbox" checked="checked">Remember me</label>
+									</div>
+									<!-- <div class="fContainer">
+											<a href="#" class="fPass">Forgot password?</a>
+									</div> -->
+								</form>
+							</div>
+						<li><a href="register.html">Create Account</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="content">
+				<li class="dropdown">
+					<a href="account.html" class="activeNav">My Account &#9660;</a>
+					<ul>
+						<li><a>Log In</a></li>
+						<li><a href="register.html">Create Account</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="contentMenu">
 			<div id="conmenutxt">
 				<h1>Full Menu</h1>
 				<h2>All sort of your favourite menu</h2>
@@ -56,7 +86,7 @@
 				<img src="images/kentang.png">
 			</div>
 		</div>
-		
+
 		<div id="content1Menu">
 			<a href="food.html">
 				<div class="cardMenu">
@@ -76,7 +106,7 @@
 					<div class="cardMenuimg">
 						<img src="images/beveragemenu.jpg">
 					</div>
-					
+
 					<div class="cardMenutxt">
 						<h2>Beverage</h2>
 						<h4>Gathering with family and friends will be more fun with a variety beverage choices.</h4>
@@ -89,7 +119,7 @@
 					<div class="cardMenuimg">
 						<img src="images/dessertmenu.jpg">
 					</div>
-					
+
 					<div class="cardMenutxt">
 						<h2>Dessert</h2>
 						<h4>Complete your meal with a selection of rich in flavor dessert menus</h4>
@@ -97,7 +127,7 @@
 				</div>
 			</a>
 		</div>
-
+		
 		<div class="footer">
 			<h6>Copyright &copy; 2019 Beefood Indonesia</h6>
 		</div>
