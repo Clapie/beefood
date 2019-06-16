@@ -1,0 +1,77 @@
+#html .contentMenu {
+    background-color: #f1f1f1;
+    display: block;
+    height: 400px;
+    width: 100%;
+}
+
+#html .contentMenu #conmenutxt {
+    display: inline-block;
+    width: 55%;
+    height: 100%;
+    margin: 20px auto;
+    vertical-align: top;
+    padding-left: 30px;
+    padding-top: 40px;
+}
+
+#html .contentMenu #conmenutxt h1 {
+    font-size: 70px;
+    margin-bottom: 0;
+    font-weight: 100;
+}
+
+#html .contentMenu #conmenutxt h2 {
+    font-size: 30px;
+    margin-top: 0;
+    font-weight: 100;
+}
+
+#html .contentMenu #conmenuimg {
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+}
+
+#html .contentMenu #conmenuimg img {
+    height: 100%;
+}
+
+#html .content1Menu {
+    display: block;
+    margin: auto 0;
+}
+
+#html .content1Menu .cardMenu{
+    display: inline-block;
+    width: 40%;
+    margin: 30px 40px;
+    padding-left: 30px;
+}
+
+#html .content1Menu .cardMenu .cardMenuimg {
+    height: 40%;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#html .content1Menu .cardMenu .cardMenuimg img{
+    height: 100%;
+    margin: auto 0;
+    padding-left: 70px;
+}
+
+#html .content1Menu .cardMenu .cardMenutxt{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+#html .content1Menu .cardMenu .cardMenutxt h2{
+    font-size: 40px;
+}
+
+#html .content1Menu .cardMenu .cardMenutxt h4{
+    font-size: 20px;
+    font-weight: 100;
+}

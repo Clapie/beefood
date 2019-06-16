@@ -5,43 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/popup.css">
+	<link rel="stylesheet" href="css/menu-style.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Menu | Beefood</title>
 </head>
 <body>
 	<div id="html">
 		<div class="header">
-			<ul>
-				<li><a href="home.html">Home</a></li>
-				<li><a href="menu.html" class="activeNav">Menu</a></li>
-				<li id="myBtn"><a>Cart</a></li>	
-					<!-- Modal -->
-					<div id="myModal" class="modal">		
-						<div class="modal-content">
-							<div class="modal-header">
-								<span class="close">&times;</span>
-								<h2>Your Cart</h2>
-							</div>
-							<div class="modal-body">
-								<p>Your cart is empty...</p>
-							</div>
-							<div class="modal-footer">
-								<button>Place Order</button>
+				<ul>
+					<li><a href="home.html" class="activeNav">Home</a></li>
+					<li class="dropdown">
+						<a href="menu.html">Menu &#9660;</a>
+						<ul>
+							<li><a>Foods</a></li>
+							<li><a>Beverages</a></li>
+							<li><a>Dessert</a></li>
+						</ul>
+					</li>
+					<li id="myBtn"><a>Cart</a></li>	
+						<!-- Modal -->
+						<div id="myModal" class="modal">		
+							<div class="modal-content">
+								<div class="modal-header">
+									<span class="close">&times;</span>
+									<h2>Your Cart</h2>
+								</div>
+								<div class="modal-body">
+									<p>Your cart is empty...</p>
+								</div>
+								<div class="modal-footer">
+									<button>Place Order</button>
+								</div>
 							</div>
 						</div>
-					</div>		
-				<li class="dropdown">
-					<a href="account.html" class="activeNav">My Account &#9660;</a>
-					<ul>
-						<li><a>Log In</a></li>
-						<li><a href="register.html">Create Account</a></li>
-					</ul>
-				</li>
-			</ul>
-        </div>
-        <div class="content">
+					<li class="dropdown">
+						<a href="account.html" class="activeNav">My Account &#9660;</a>
+						<ul>
+							<li><a>Log In</a></li>
+							<li><a href="register.html">Create Account</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+        <div class="contentMenu">
+			<div id="conmenutxt">
+				<h1>Full Menu</h1>
+				<h2>All sort of your favourite menu</h2>
+			</div>
+			<div id="conmenuimg">
+				<img src="images/kentang.png">
+			</div>
+		</div>
+		
+		<div class="content1Menu">
+			<a href="food.html">
+				<div class="cardMenu">
+					<div class="cardMenuimg">
+						<img src="images/foodmenu.jpg">
+					</div>
 
-        </div>
+					<div class="cardMenutxt">
+						<h2>Food</h2>
+						<h4>Feel the sensation of burgers and fried chicken that you will definitely like. Available in a la carte and package</h4>
+					</div>
+				</div>
+			</a>
+
+			<a href="beverage.html">
+				<div class="cardMenu">
+					<div class="cardMenuimg">
+						<img src="images/beveragemenu.jpg">
+					</div>
+					
+					<div class="cardMenutxt">
+						<h2>Beverage</h2>
+						<h4>Gathering with family and friends will be more fun with a variety beverage choices.</h4>
+					</div>
+				</div>
+			</a>
+
+			<a href="dessert.html">
+				<div class="cardMenu">
+					<div class="cardMenuimg">
+						<img src="images/dessertmenu.jpg">
+					</div>
+					
+					<div class="cardMenutxt">
+						<h2>Dessert</h2>
+						<h4>Complete your meal with a selection of rich in flavor dessert menus</h4>
+					</div>
+				</div>
+			</a>
+		</div>
+
 		<div class="footer">
 			<h6>Copyright &copy; 2019 Beefood Indonesia</h6>
 		</div>
