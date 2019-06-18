@@ -70,3 +70,48 @@
   width: auto;
   
 }
+
+.cart-item {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  position: relative;
+  
+}
+
+.cart-name, .cart-number{
+  margin: 90px;
+}
+
+
+.remove {
+  margin-right: 30px;
+  color: grey;
+  opacity: 0.7;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.remove:hover {
+  color: red;
+  opacity: 1;
+}
+
+.price {
+  text-align: right;
+  padding-right: 5%;
+}
+
+.price-detail {
+  line-height: 1.5px;
+  font-size: 18px;
+}
+
+#total {
+  font-weight: bold;
+  font-size: 20px;
+}
