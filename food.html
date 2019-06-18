@@ -34,7 +34,40 @@
 								<h2>Your Cart</h2>
 							</div>
 							<div class="modal-body">
-								<p>Your cart is empty...</p>
+									<div class="cart-item">
+											<div class="remove">
+												<span class="remove">&times;</span>
+											</div>
+											<div class="cart-icon">
+												<img src="images/foodmenu1.jpg" alt="">
+											</div>
+											<div class="cart-name">
+												<h3>Cheeseburger</h3>
+											</div>                                    
+											<div class="input_div cart-number">
+												<input type="text" size="10" value="0" id="food1">
+												<input type="button" value="-" onclick="minus('food1')">
+												<input type="button" value="+" onclick="plus('food1')">
+											</div>
+											<div class="cart-price">
+												<p>$4</p>
+											</div>
+										</div>
+										<hr>
+										<div class="price">
+											<p class="price-detail">Subtotal: $3</p>
+											<p class="price-detail">Tax (5%): $0.15</p>
+											<p id="total" class="price-detail">Total: $3.15</p>
+											<div class="payment">
+												<p class="price-detail">Payment option: 
+													<select name="payment">
+														<option value="Gopay">Gopay</option>
+														<option value="OVO">OVO</option>
+														<option value="Cash on Delivery">Cash on Delivery</option>
+													</select>
+												</p>                                        
+											</div>                                    
+										</div>
 							</div>
 							<div class="modal-footer">
 								<button id="order">Place Order</button>
